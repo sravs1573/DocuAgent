@@ -11,15 +11,25 @@ class ExtractionAgent:
     """LLM-powered extraction agent with structured output"""
     
     def __init__(self, model: str = "gpt-4o"):
-        api_key = os.getenv("OPENAI_API_KEY")
+        # Try multiple API keys in order
+        api_keys = [
+            os.getenv("OPENAI_API_KEY"),
+            os.getenv("OPENAI_API_KEY_2"),
+            os.getenv("OPENAI_API_KEY_BACKUP")
+        ]
+        
+        # Use the first available key
+        api_key = next((key for key in api_keys if key), None)
+        
         if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable is required")
+            raise ValueError("At least one OPENAI_API_KEY environment variable is required")
         
         self.llm = ChatOpenAI(
             temperature=0,
             model=model,  # the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
-            openai_api_key=api_key
+            api_key=api_key
         )
+        self.current_api_key = api_key
         
         # Schema mapping
         self.schemas = {

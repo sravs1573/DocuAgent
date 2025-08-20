@@ -106,6 +106,10 @@ def main():
             ["gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo"],
             index=0
         )
+        
+        # API Key selection (optional)
+        st.subheader("API Key Configuration")
+        st.info("💡 Add OPENAI_API_KEY_2 or OPENAI_API_KEY_BACKUP in Secrets for automatic failover")
     
     # Main content area
     col1, col2 = st.columns([1, 2])
