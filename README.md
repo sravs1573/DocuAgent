@@ -1,3 +1,15 @@
+---
+title: Document Processing Agent
+emoji: 📄
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.28.0
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # Intelligent Document Processing Agent
 
 An advanced document processing system built with Streamlit and LangChain that uses OpenAI's GPT-4o to extract structured data from PDFs and images with confidence scoring and validation.
