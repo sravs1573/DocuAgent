@@ -1,0 +1,891 @@
+[     UTC     ] Logs for docuagent-cvvx3hgw7rxntt8fxe75z7.streamlit.app/
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[11:05:45] 🚀 Starting up repository: 'docuagent', branch: 'main', main module: 'app.py'
+
+[11:05:45] 🐙 Cloning repository...
+
+[11:05:46] 🐙 Cloning into '/mount/src/docuagent'...
+Warning: Permanently added the ED25519 host key for IP address '140.82.116.4' to the list of known hosts.
+
+[11:05:46] 🐙 Cloned repository!
+
+[11:05:46] 🐙 Pulling code changes from Github...
+
+[11:05:47] 📦 Processing dependencies...
+
+[11:05:47] 📦 Apt dependencies were installed from /mount/src/docuagent/packages.txt using apt-get.
+
+Get:1 https://packages.microsoft.com/debian/11/prod bullseye InRelease [3650 B]
+
+Get:2 https://packages.microsoft.com/debian/11/prod bullseye/main arm64 Packages [52.1 kB]
+
+Get:3 https://packages.microsoft.com/debian/11/prod bullseye/main amd64 Packages [204 kB]
+
+Err:4 http://deb.debian.org/debian bullseye InRelease
+
+  Connection failed [IP: 151.101.66.132 80]
+
+Get:5 http://deb.debian.org/debian-security bullseye-security InRelease [27.2 kB]
+
+Get:6 http://deb.debian.org/debian bullseye-updates InRelease [44.0 kB]
+
+Get:7 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [391 kB]
+
+Fetched 721 kB in 1min 31s (7936 B/s)
+
+Reading package lists...[2025-08-20 11:07:19.996481] 
+
+W[2025-08-20 11:07:20.018969] : Failed to fetch http://deb.debian.org/debian/dists/bullseye/InRelease  Connection failed [IP: 151.101.66.132 80]
+
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+
+Reading package lists...[2025-08-20 11:07:21.095196] 
+
+Building dependency tree...[2025-08-20 11:07:21.580207] 
+
+Reading state information...[2025-08-20 11:07:21.581880] 
+
+libglib2.0-0 is already the newest version (2.66.8-1+deb11u6).
+
+libglib2.0-0 set to manually installed.
+
+The following additional packages will be installed:
+
+  fontconfig libarchive13 libcairo2 libdatrie1 libdrm-amdgpu1 libdrm-common
+
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libfribidi0 libgif7
+
+  libgl1 libgl1-mesa-dri libglapi-mesa libglvnd0 libglx-mesa0 libglx0
+
+  libgraphite2-3 libharfbuzz0b liblept5 libllvm11 libopenjp2-7 libpango-1.0-0
+
+  libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0 libpixman-1-0
+
+  libsensors-config libsensors5 libtesseract4 libthai-data libthai0 libvulkan1
+
+  libwayland-client0 libwebpmux3 libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0
+
+  libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shm0
+
+  libxcb-sync1 libxcb-xfixes0 libxdamage1 libxfixes3 libxrender1 libxshmfence1
+
+  libxxf86vm1 libz3-4 mesa-vulkan-drivers tesseract-ocr-osd
+
+Suggested packages:
+
+  lrzip pciutils lm-sensors
+
+The following NEW packages will be installed:
+
+  fontconfig libarchive13 libcairo2 libdatrie1 libdrm-amdgpu1 libdrm-common
+
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libfribidi0 libgif7
+
+  libgl1 libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libglvnd0 libglx-mesa0
+
+  libglx0 libgraphite2-3 libharfbuzz0b liblept5 libllvm11 libopenjp2-7
+
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+
+  libpixman-1-0 libsensors-config libsensors5 libtesseract4 libthai-data
+
+  libthai0 libvulkan1 libwayland-client0 libwebpmux3 libx11-xcb1 libxcb-dri2-0
+
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-render0
+
+  libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxdamage1 libxfixes3 libxrender1
+
+  libxshmfence1 libxxf86vm1 libz3-4 mesa-vulkan-drivers tesseract-ocr
+
+  tesseract-ocr-eng tesseract-ocr-osd
+
+0 upgraded, 57 newly installed, 0 to remove and 11 not upgraded.
+
+Need to get 52.5 MB of archives.
+
+After this operation, 199 MB of additional disk space will be used.
+
+Get:1 http://deb.debian.org/debian bullseye/main amd64 fontconfig amd64 2.13.1-4.2 [417 kB]
+
+Get:2 http://deb.debian.org/debian-security bullseye-security/main amd64 libarchive13 amd64 3.4.3-2+deb11u2 [343 kB]
+
+Get:3 http://deb.debian.org/debian bullseye/main amd64 libpixman-1-0 amd64 0.40.0-1.1~deb11u1 [543 kB]
+
+Get:4 http://deb.debian.org/debian bullseye/main amd64 libxcb-render0 amd64 1.14-3 [111 kB]
+
+Get:5 http://deb.debian.org/debian bullseye/main amd64 libxcb-shm0 amd64 1.14-3 [101 kB]
+
+Get:6 http://deb.debian.org/debian bullseye/main amd64 libxrender1 amd64 1:0.9.10-1 [33.0 kB]
+
+Get:7 http://deb.debian.org/debian bullseye/main amd64 libcairo2 amd64 1.16.0-5 [694 kB]
+
+Get:8 http://deb.debian.org/debian bullseye/main amd64 libdatrie1 amd64 0.2.13-1 [42.7 kB]
+
+Get:9 http://deb.debian.org/debian bullseye/main amd64 libdrm-common all 2.4.104-1 [14.9 kB]
+
+Get:10 http://deb.debian.org/debian bullseye/main amd64 libdrm2 amd64 2.4.104-1 [41.5 kB]
+
+Get:11 http://deb.debian.org/debian bullseye/main amd64 libdrm-amdgpu1 amd64 2.4.104-1 [28.5 kB]
+
+Get:12 http://deb.debian.org/debian bullseye/main amd64 libpciaccess0 amd64 0.16-1 [53.6 kB]
+
+Get:13 http://deb.debian.org/debian bullseye/main amd64 libdrm-intel1 amd64 2.4.104-1 [71.8 kB]
+
+Get:14 http://deb.debian.org/debian bullseye/main amd64 libdrm-nouveau2 amd64 2.4.104-1 [26.8 kB]
+
+Get:15 http://deb.debian.org/debian bullseye/main amd64 libdrm-radeon1 amd64 2.4.104-1 [30.2 kB]
+
+Get:16 http://deb.debian.org/debian bullseye/main amd64 libfribidi0 amd64 1.0.8-2+deb11u1 [64.9 kB]
+
+Get:17 http://deb.debian.org/debian bullseye/main amd64 libgif7 amd64 5.1.9-2 [45.1 kB]
+
+Get:18 http://deb.debian.org/debian bullseye/main amd64 libglapi-mesa amd64 20.3.5-1 [71.7 kB]
+
+Get:19 http://deb.debian.org/debian bullseye/main amd64 libz3-4 amd64 4.8.10-1 [6949 kB]
+
+Get:20 http://deb.debian.org/debian bullseye/main amd64 libllvm11 amd64 1:11.0.1-2 [17.9 MB]
+
+Get:21 http://deb.debian.org/debian bullseye/main amd64 libsensors-config all 1:3.6.0-7 [32.3 kB]
+
+Get:22 http://deb.debian.org/debian bullseye/main amd64 libsensors5 amd64 1:3.6.0-7 [52.3 kB]
+
+Get:23 http://deb.debian.org/debian bullseye/main amd64 libvulkan1 amd64 1.2.162.0-1 [103 kB]
+
+Get:24 http://deb.debian.org/debian bullseye/main amd64 libgl1-mesa-dri amd64 20.3.5-1 [9633 kB]
+
+Get:25 http://deb.debian.org/debian bullseye/main amd64 libglvnd0 amd64 1.3.2-1 [53.6 kB]
+
+Get:26 http://deb.debian.org/debian bullseye/main amd64 libx11-xcb1 amd64 2:1.7.2-1+deb11u2 [204 kB]
+
+Get:27 http://deb.debian.org/debian bullseye/main amd64 libxcb-dri2-0 amd64 1.14-3 [103 kB]
+
+Get:28 http://deb.debian.org/debian bullseye/main amd64 libxcb-dri3-0 amd64 1.14-3 [102 kB]
+
+Get:29 http://deb.debian.org/debian bullseye/main amd64 libxcb-glx0 amd64 1.14-3 [118 kB]
+
+Get:30 http://deb.debian.org/debian bullseye/main amd64 libxcb-present0 amd64 1.14-3 [101 kB]
+
+Get:31 http://deb.debian.org/debian bullseye/main amd64 libxcb-sync1 amd64 1.14-3 [105 kB]
+
+Get:32 http://deb.debian.org/debian bullseye/main amd64 libxcb-xfixes0 amd64 1.14-3 [105 kB]
+
+Get:33 http://deb.debian.org/debian bullseye/main amd64 libxdamage1 amd64 1:1.1.5-2 [15.7 kB]
+
+Get:34 http://deb.debian.org/debian bullseye/main amd64 libxfixes3 amd64 1:5.0.3-2 [22.1 kB]
+
+Get:35 http://deb.debian.org/debian bullseye/main amd64 libxshmfence1 amd64 1.3-1 [8820 B]
+
+Get:36 http://deb.debian.org/debian bullseye/main amd64 libxxf86vm1 amd64 1:1.1.4-1+b2 [20.8 kB]
+
+Get:37 http://deb.debian.org/debian bullseye/main amd64 libglx-mesa0 amd64 20.3.5-1 [186 kB]
+
+Get:38 http://deb.debian.org/debian bullseye/main amd64 libglx0 amd64 1.3.2-1 [35.7 kB]
+
+Get:39 http://deb.debian.org/debian bullseye/main amd64 libgl1 amd64 1.3.2-1 [89.5 kB]
+
+Get:40 http://deb.debian.org/debian bullseye/main amd64 libgl1-mesa-glx amd64 20.3.5-1 [51.1 kB]
+
+Get:41 http://deb.debian.org/debian bullseye/main amd64 libgraphite2-3 amd64 1.3.14-1 [81.2 kB]
+
+Get:42 http://deb.debian.org/debian bullseye/main amd64 libharfbuzz0b amd64 2.7.4-1 [1471 kB]
+
+Get:43 http://deb.debian.org/debian-security bullseye-security/main amd64 libopenjp2-7 amd64 2.4.0-3+deb11u1 [172 kB]
+
+Get:44 http://deb.debian.org/debian bullseye/main amd64 libwebpmux3 amd64 0.6.1-2.1+deb11u2 [97.7 kB]
+
+Get:45 http://deb.debian.org/debian bullseye/main amd64 liblept5 amd64 1.79.0-1.1+deb11u1 [1027 kB]
+
+Get:46 http://deb.debian.org/debian bullseye/main amd64 libthai-data all 0.1.28-3 [170 kB]
+
+Get:47 http://deb.debian.org/debian bullseye/main amd64 libthai0 amd64 0.1.28-3 [54.2 kB]
+
+Get:48 http://deb.debian.org/debian bullseye/main amd64 libpango-1.0-0 amd64 1.46.2-3 [191 kB]
+
+Get:49 http://deb.debian.org/debian bullseye/main amd64 libpangoft2-1.0-0 amd64 1.46.2-3 [62.2 kB]
+
+Get:50 http://deb.debian.org/debian bullseye/main amd64 libpangocairo-1.0-0 amd64 1.46.2-3 [50.6 kB]
+
+Get:51 http://deb.debian.org/debian bullseye/main amd64 libtesseract4 amd64 4.1.1-2.1 [1274 kB]
+
+Get:52 http://deb.debian.org/debian bullseye/main amd64 libwayland-client0 amd64 1.18.0-2~exp1.1 [26.9 kB]
+
+Get:53 http://deb.debian.org/debian bullseye/main amd64 libxcb-randr0 amd64 1.14-3 [113 kB]
+
+Get:54 http://deb.debian.org/debian bullseye/main amd64 mesa-vulkan-drivers amd64 20.3.5-1 [4086 kB]
+
+Get:55 http://deb.debian.org/debian bullseye/main amd64 tesseract-ocr-eng all 1:4.00~git30-7274cfa-1.1 [1592 kB]
+
+Get:56 http://deb.debian.org/debian bullseye/main amd64 tesseract-ocr-osd all 1:4.00~git30-7274cfa-1.1 [2991 kB]
+
+Get:57 http://deb.debian.org/debian bullseye/main amd64 tesseract-ocr amd64 4.1.1-2.1 [328 kB]
+
+debconf: delaying package configuration, since apt-utils is not installed
+
+Fetched 52.5 MB in 1s (49.2 MB/s)
+
+Selecting previously unselected package fontconfig.
+
+(Reading database ... 22039 files and directories currently installed.)
+
+Preparing to unpack .../00-fontconfig_2.13.1-4.2_amd64.deb ...
+
+Unpacking fontconfig (2.13.1-4.2) ...
+
+Selecting previously unselected package libarchive13:amd64.
+
+Preparing to unpack .../01-libarchive13_3.4.3-2+deb11u2_amd64.deb ...
+
+Unpacking libarchive13:amd64 (3.4.3-2+deb11u2) ...
+
+Selecting previously unselected package libpixman-1-0:amd64.
+
+Preparing to unpack .../02-libpixman-1-0_0.40.0-1.1~deb11u1_amd64.deb ...
+
+Unpacking libpixman-1-0:amd64 (0.40.0-1.1~deb11u1) ...
+
+Selecting previously unselected package libxcb-render0:amd64.
+
+Preparing to unpack .../03-libxcb-render0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-render0:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxcb-shm0:amd64.
+
+Preparing to unpack .../04-libxcb-shm0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-shm0:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxrender1:amd64.
+
+Preparing to unpack .../05-libxrender1_1%3a0.9.10-1_amd64.deb ...
+
+Unpacking libxrender1:amd64 (1:0.9.10-1) ...
+
+Selecting previously unselected package libcairo2:amd64.
+
+Preparing to unpack .../06-libcairo2_1.16.0-5_amd64.deb ...
+
+Unpacking libcairo2:amd64 (1.16.0-5) ...
+
+Selecting previously unselected package libdatrie1:amd64.
+
+Preparing to unpack .../07-libdatrie1_0.2.13-1_amd64.deb ...
+
+Unpacking libdatrie1:amd64 (0.2.13-1) ...
+
+Selecting previously unselected package libdrm-common.
+
+Preparing to unpack .../08-libdrm-common_2.4.104-1_all.deb ...
+
+Unpacking libdrm-common (2.4.104-1) ...
+
+Selecting previously unselected package libdrm2:amd64.
+
+Preparing to unpack .../09-libdrm2_2.4.104-1_amd64.deb ...
+
+Unpacking libdrm2:amd64 (2.4.104-1) ...
+
+Selecting previously unselected package libdrm-amdgpu1:amd64.
+
+Preparing to unpack .../10-libdrm-amdgpu1_2.4.104-1_amd64.deb ...
+
+Unpacking libdrm-amdgpu1:amd64 (2.4.104-1) ...
+
+Selecting previously unselected package libpciaccess0:amd64.
+
+Preparing to unpack .../11-libpciaccess0_0.16-1_amd64.deb ...
+
+Unpacking libpciaccess0:amd64 (0.16-1) ...
+
+Selecting previously unselected package libdrm-intel1:amd64.
+
+Preparing to unpack .../12-libdrm-intel1_2.4.104-1_amd64.deb ...
+
+Unpacking libdrm-intel1:amd64 (2.4.104-1) ...
+
+Selecting previously unselected package libdrm-nouveau2:amd64.
+
+Preparing to unpack .../13-libdrm-nouveau2_2.4.104-1_amd64.deb ...
+
+Unpacking libdrm-nouveau2:amd64 (2.4.104-1) ...
+
+Selecting previously unselected package libdrm-radeon1:amd64.
+
+Preparing to unpack .../14-libdrm-radeon1_2.4.104-1_amd64.deb ...
+
+Unpacking libdrm-radeon1:amd64 (2.4.104-1) ...
+
+Selecting previously unselected package libfribidi0:amd64.
+
+Preparing to unpack .../15-libfribidi0_1.0.8-2+deb11u1_amd64.deb ...
+
+Unpacking libfribidi0:amd64 (1.0.8-2+deb11u1) ...
+
+Selecting previously unselected package libgif7:amd64.
+
+Preparing to unpack .../16-libgif7_5.1.9-2_amd64.deb ...
+
+Unpacking libgif7:amd64 (5.1.9-2) ...
+
+Selecting previously unselected package libglapi-mesa:amd64.
+
+Preparing to unpack .../17-libglapi-mesa_20.3.5-1_amd64.deb ...
+
+Unpacking libglapi-mesa:amd64 (20.3.5-1) ...
+
+Selecting previously unselected package libz3-4:amd64.
+
+Preparing to unpack .../18-libz3-4_4.8.10-1_amd64.deb ...
+
+Unpacking libz3-4:amd64 (4.8.10-1) ...
+
+Selecting previously unselected package libllvm11:amd64.
+
+Preparing to unpack .../19-libllvm11_1%3a11.0.1-2_amd64.deb ...
+
+Unpacking libllvm11:amd64 (1:11.0.1-2) ...
+
+Selecting previously unselected package libsensors-config.
+
+Preparing to unpack .../20-libsensors-config_1%3a3.6.0-7_all.deb ...
+
+Unpacking libsensors-config (1:3.6.0-7) ...
+
+Selecting previously unselected package libsensors5:amd64.
+
+Preparing to unpack .../21-libsensors5_1%3a3.6.0-7_amd64.deb ...
+
+Unpacking libsensors5:amd64 (1:3.6.0-7) ...
+
+Selecting previously unselected package libvulkan1:amd64.
+
+Preparing to unpack .../22-libvulkan1_1.2.162.0-1_amd64.deb ...
+
+Unpacking libvulkan1:amd64 (1.2.162.0-1) ...
+
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+
+Preparing to unpack .../23-libgl1-mesa-dri_20.3.5-1_amd64.deb ...
+
+Unpacking libgl1-mesa-dri:amd64 (20.3.5-1) ...
+
+Selecting previously unselected package libglvnd0:amd64.
+
+Preparing to unpack .../24-libglvnd0_1.3.2-1_amd64.deb ...
+
+Unpacking libglvnd0:amd64 (1.3.2-1) ...
+
+Selecting previously unselected package libx11-xcb1:amd64.
+
+Preparing to unpack .../25-libx11-xcb1_2%3a1.7.2-1+deb11u2_amd64.deb ...
+
+Unpacking libx11-xcb1:amd64 (2:1.7.2-1+deb11u2) ...
+
+Selecting previously unselected package libxcb-dri2-0:amd64.
+
+Preparing to unpack .../26-libxcb-dri2-0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-dri2-0:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxcb-dri3-0:amd64.
+
+Preparing to unpack .../27-libxcb-dri3-0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-dri3-0:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxcb-glx0:amd64.
+
+Preparing to unpack .../28-libxcb-glx0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-glx0:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxcb-present0:amd64.
+
+Preparing to unpack .../29-libxcb-present0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-present0:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxcb-sync1:amd64.
+
+Preparing to unpack .../30-libxcb-sync1_1.14-3_amd64.deb ...
+
+Unpacking libxcb-sync1:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxcb-xfixes0:amd64.
+
+Preparing to unpack .../31-libxcb-xfixes0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-xfixes0:amd64 (1.14-3) ...
+
+Selecting previously unselected package libxdamage1:amd64.
+
+Preparing to unpack .../32-libxdamage1_1%3a1.1.5-2_amd64.deb ...
+
+Unpacking libxdamage1:amd64 (1:1.1.5-2) ...
+
+Selecting previously unselected package libxfixes3:amd64.
+
+Preparing to unpack .../33-libxfixes3_1%3a5.0.3-2_amd64.deb ...
+
+Unpacking libxfixes3:amd64 (1:5.0.3-2) ...
+
+Selecting previously unselected package libxshmfence1:amd64.
+
+Preparing to unpack .../34-libxshmfence1_1.3-1_amd64.deb ...
+
+Unpacking libxshmfence1:amd64 (1.3-1) ...
+
+Selecting previously unselected package libxxf86vm1:amd64.
+
+Preparing to unpack .../35-libxxf86vm1_1%3a1.1.4-1+b2_amd64.deb ...
+
+Unpacking libxxf86vm1:amd64 (1:1.1.4-1+b2) ...
+
+Selecting previously unselected package libglx-mesa0:amd64.
+
+Preparing to unpack .../36-libglx-mesa0_20.3.5-1_amd64.deb ...
+
+Unpacking libglx-mesa0:amd64 (20.3.5-1) ...
+
+Selecting previously unselected package libglx0:amd64.
+
+Preparing to unpack .../37-libglx0_1.3.2-1_amd64.deb ...
+
+Unpacking libglx0:amd64 (1.3.2-1) ...
+
+Selecting previously unselected package libgl1:amd64.
+
+Preparing to unpack .../38-libgl1_1.3.2-1_amd64.deb ...
+
+Unpacking libgl1:amd64 (1.3.2-1) ...
+
+Selecting previously unselected package libgl1-mesa-glx:amd64.
+
+Preparing to unpack .../39-libgl1-mesa-glx_20.3.5-1_amd64.deb ...
+
+Unpacking libgl1-mesa-glx:amd64 (20.3.5-1) ...
+
+Selecting previously unselected package libgraphite2-3:amd64.
+
+Preparing to unpack .../40-libgraphite2-3_1.3.14-1_amd64.deb ...
+
+Unpacking libgraphite2-3:amd64 (1.3.14-1) ...
+
+Selecting previously unselected package libharfbuzz0b:amd64.
+
+Preparing to unpack .../41-libharfbuzz0b_2.7.4-1_amd64.deb ...
+
+Unpacking libharfbuzz0b:amd64 (2.7.4-1) ...
+
+Selecting previously unselected package libopenjp2-7:amd64.
+
+Preparing to unpack .../42-libopenjp2-7_2.4.0-3+deb11u1_amd64.deb ...
+
+Unpacking libopenjp2-7:amd64 (2.4.0-3+deb11u1) ...
+
+Selecting previously unselected package libwebpmux3:amd64.
+
+Preparing to unpack .../43-libwebpmux3_0.6.1-2.1+deb11u2_amd64.deb ...
+
+Unpacking libwebpmux3:amd64 (0.6.1-2.1+deb11u2) ...
+
+Selecting previously unselected package liblept5:amd64.
+
+Preparing to unpack .../44-liblept5_1.79.0-1.1+deb11u1_amd64.deb ...
+
+Unpacking liblept5:amd64 (1.79.0-1.1+deb11u1) ...
+
+Selecting previously unselected package libthai-data.
+
+Preparing to unpack .../45-libthai-data_0.1.28-3_all.deb ...
+
+Unpacking libthai-data (0.1.28-3) ...
+
+Selecting previously unselected package libthai0:amd64.
+
+Preparing to unpack .../46-libthai0_0.1.28-3_amd64.deb ...
+
+Unpacking libthai0:amd64 (0.1.28-3) ...
+
+Selecting previously unselected package libpango-1.0-0:amd64.
+
+Preparing to unpack .../47-libpango-1.0-0_1.46.2-3_amd64.deb ...
+
+Unpacking libpango-1.0-0:amd64 (1.46.2-3) ...
+
+Selecting previously unselected package libpangoft2-1.0-0:amd64.
+
+Preparing to unpack .../48-libpangoft2-1.0-0_1.46.2-3_amd64.deb ...
+
+Unpacking libpangoft2-1.0-0:amd64 (1.46.2-3) ...
+
+Selecting previously unselected package libpangocairo-1.0-0:amd64.
+
+Preparing to unpack .../49-libpangocairo-1.0-0_1.46.2-3_amd64.deb ...
+
+Unpacking libpangocairo-1.0-0:amd64 (1.46.2-3) ...
+
+Selecting previously unselected package libtesseract4:amd64.
+
+Preparing to unpack .../50-libtesseract4_4.1.1-2.1_amd64.deb ...
+
+Unpacking libtesseract4:amd64 (4.1.1-2.1) ...
+
+Selecting previously unselected package libwayland-client0:amd64.
+
+Preparing to unpack .../51-libwayland-client0_1.18.0-2~exp1.1_amd64.deb ...
+
+Unpacking libwayland-client0:amd64 (1.18.0-2~exp1.1) ...
+
+Selecting previously unselected package libxcb-randr0:amd64.
+
+Preparing to unpack .../52-libxcb-randr0_1.14-3_amd64.deb ...
+
+Unpacking libxcb-randr0:amd64 (1.14-3) ...
+
+Selecting previously unselected package mesa-vulkan-drivers:amd64.
+
+Preparing to unpack .../53-mesa-vulkan-drivers_20.3.5-1_amd64.deb ...
+
+Unpacking mesa-vulkan-drivers:amd64 (20.3.5-1) ...
+
+Selecting previously unselected package tesseract-ocr-eng.
+
+Preparing to unpack .../54-tesseract-ocr-eng_1%3a4.00~git30-7274cfa-1.1_all.deb ...
+
+Unpacking tesseract-ocr-eng (1:4.00~git30-7274cfa-1.1) ...
+
+Selecting previously unselected package tesseract-ocr-osd.
+
+Preparing to unpack .../55-tesseract-ocr-osd_1%3a4.00~git30-7274cfa-1.1_all.deb ...
+
+Unpacking tesseract-ocr-osd (1:4.00~git30-7274cfa-1.1) ...
+
+Selecting previously unselected package tesseract-ocr.
+
+Preparing to unpack .../56-tesseract-ocr_4.1.1-2.1_amd64.deb ...
+
+Unpacking tesseract-ocr (4.1.1-2.1) ...
+
+Setting up libgraphite2-3:amd64 (1.3.14-1) ...
+
+Setting up libxcb-dri3-0:amd64 (1.14-3) ...
+
+Setting up libpixman-1-0:amd64 (0.40.0-1.1~deb11u1) ...
+
+Setting up libx11-xcb1:amd64 (2:1.7.2-1+deb11u2) ...
+
+Setting up libpciaccess0:amd64 (0.16-1) ...
+
+Setting up fontconfig (2.13.1-4.2) ...
+
+Regenerating fonts cache... [2025-08-20 11:07:39.930964] done.
+
+Setting up libxdamage1:amd64 (1:1.1.5-2) ...
+
+Setting up libxcb-xfixes0:amd64 (1.14-3) ...
+
+Setting up libxrender1:amd64 (1:0.9.10-1) ...
+
+Setting up libdatrie1:amd64 (0.2.13-1) ...
+
+Setting up libarchive13:amd64 (3.4.3-2+deb11u2) ...
+
+Setting up libxcb-render0:amd64 (1.14-3) ...
+
+Setting up libglvnd0:amd64 (1.3.2-1) ...
+
+Setting up libxcb-glx0:amd64 (1.14-3) ...
+
+Setting up libsensors-config (1:3.6.0-7) ...
+
+Setting up tesseract-ocr-eng (1:4.00~git30-7274cfa-1.1) ...
+
+Setting up libxcb-shm0:amd64 (1.14-3) ...
+
+Setting up libcairo2:amd64 (1.16.0-5) ...
+
+Setting up libxxf86vm1:amd64 (1:1.1.4-1+b2) ...
+
+Setting up libxcb-present0:amd64 (1.14-3) ...
+
+Setting up libz3-4:amd64 (4.8.10-1) ...
+
+Setting up libllvm11:amd64 (1:11.0.1-2) ...
+
+Setting up libxfixes3:amd64 (1:5.0.3-2) ...
+
+Setting up libxcb-sync1:amd64 (1.14-3) ...
+
+Setting up libfribidi0:amd64 (1.0.8-2+deb11u1) ...
+
+Setting up libsensors5:amd64 (1:3.6.0-7) ...
+
+Setting up libglapi-mesa:amd64 (20.3.5-1) ...
+
+Setting up libvulkan1:amd64 (1.2.162.0-1) ...
+
+Setting up libxcb-dri2-0:amd64 (1.14-3) ...
+
+Setting up libgif7:amd64 (5.1.9-2) ...
+
+Setting up libxshmfence1:amd64 (1.3-1) ...
+
+Setting up libxcb-randr0:amd64 (1.14-3) ...
+
+Setting up libopenjp2-7:amd64 (2.4.0-3+deb11u1) ...
+
+Setting up libharfbuzz0b:amd64 (2.7.4-1) ...
+
+Setting up libthai-data (0.1.28-3) ...
+
+Setting up tesseract-ocr-osd (1:4.00~git30-7274cfa-1.1) ...
+
+Setting up libwebpmux3:amd64 (0.6.1-2.1+deb11u2) ...
+
+Setting up libdrm-common (2.4.104-1) ...
+
+Setting up libwayland-client0:amd64 (1.18.0-2~exp1.1) ...
+
+Setting up liblept5:amd64 (1.79.0-1.1+deb11u1) ...
+
+Setting up libthai0:amd64 (0.1.28-3) ...
+
+Setting up libtesseract4:amd64 (4.1.1-2.1) ...
+
+Setting up libdrm2:amd64 (2.4.104-1) ...
+
+Setting up libdrm-amdgpu1:amd64 (2.4.104-1) ...
+
+Setting up mesa-vulkan-drivers:amd64 (20.3.5-1) ...
+
+Setting up libdrm-nouveau2:amd64 (2.4.104-1) ...
+
+Setting up libdrm-radeon1:amd64 (2.4.104-1) ...
+
+Setting up libpango-1.0-0:amd64 (1.46.2-3) ...
+
+Setting up libdrm-intel1:amd64 (2.4.104-1) ...
+
+Setting up libgl1-mesa-dri:amd64 (20.3.5-1) ...
+
+Setting up libpangoft2-1.0-0:amd64 (1.46.2-3) ...
+
+Setting up libpangocairo-1.0-0:amd64 (1.46.2-3) ...
+
+Setting up libglx-mesa0:amd64 (20.3.5-1) ...
+
+Setting up libglx0:amd64 (1.3.2-1) ...
+
+Setting up libgl1:amd64 (1.3.2-1) ...
+
+Setting up tesseract-ocr (4.1.1-2.1) ...
+
+Setting up libgl1-mesa-glx:amd64 (20.3.5-1) ...
+
+Processing triggers for libc-bin (2.31-13+deb11u13) ...
+
+Prepared 92 packages in 18.23s
+
+Installed 92 packages in 544ms
+
+ + aiohappyeyeballs==2.6.1
+
+ + aiohttp==3.12.15
+
+ + aiosignal==1.4.0
+
+ + altair==5.5.0
+
+ + annotated-types==0.7.0
+
+ + anyio==4.10.0
+
+ + attrs==25.3.0
+
+ + blinker==1.9.0
+
+ + cachetools==6.1.0
+
+ + certifi==2025.8.3
+
+ + charset-normalizer==3.4.3
+
+ + click==8.2.1
+
+ + dataclasses-json==0.6.7
+
+ + distro==1.9.0
+
+ + frozenlist==1.7.0
+
+ + gitdb==4.0.12
+
+ + gitpython==3.1.45
+
+ + greenlet==3.2.4
+
+ + h11==0.16.0
+
+ + httpcore==1.0.9
+
+ + httpx==0.28.1
+
+ + httpx-sse==0.4.1
+
+ + idna==3.10
+
+ + jinja2==3.1.6
+
+ + jiter==0.10.0
+
+ + joblib==1.5.1
+
+ + jsonpatch==1.33
+
+ + jsonpointer==3.0.0
+
+ + jsonschema==4.25.1
+
+ + jsonschema-specifications==2025.4.1
+
+ + langchain==0.3.27
+
+ + langchain-community==0.3.27
+
+ + langchain-core==0.3.74
+
+ + langchain-openai==0.3.30
+
+ + langchain-text-splitters==0.3.9
+
+ + langsmith==0.4.14
+
+ + markupsafe==3.0.2
+
+ + marshmallow==3.26.1
+
+ + multidict==6.6.4
+
+ + mypy-extensions==1.1.0
+
+ + narwhals==2.1.2
+
+ + numpy==2.2.6
+
+ + [2025-08-20 11:08:01.243304] openai==1.100.2
+
+ + opencv-python==4.12.0.88
+
+ + opencv-python-headless==4.12.0.88
+
+ + orjson==3.11.2
+
+ + packaging==25.0
+
+ + pandas==2.3.1
+
+ + pdf2image==1.17.0
+
+ + pillow==11.3.0
+
+ + propcache==0.3.2
+
+ + protobuf==6.32.0
+
+ + pyarrow==21.0.0
+
+ + pydantic==2.11.7
+
+ + pydantic-core==2.33.2
+
+ + pydantic-settings==2.10.1
+
+ + pydeck==0.9.1
+
+ + pymupdf==1.26.3
+
+ + pypdf2[2025-08-20 11:08:01.243843] ==3.0.1
+
+ + pytesseract==0.3.13
+
+ + python-dateutil==2.9.0.post0
+
+ + python-dotenv==1.1.1
+
+ + python-multipart==0.0.20
+
+ [2025-08-20 11:08:01.244084] + pytz==2025.2
+
+ + pyyaml==6.0.2
+
+ + referencing==0.36.2
+
+ + regex==2025.7.34
+
+ + requests==2.32.5[2025-08-20 11:08:01.244299] 
+
+ + requests-toolbelt==1.0.0
+
+ + rpds-py==0.27.0
+
+ + scikit-learn==1.7.1
+
+ + scipy==1.16.1[2025-08-20 11:08:01.244566] 
+
+ + six==1.17.0
+
+ + smmap==5.0.2
+
+ + sniffio[2025-08-20 11:08:01.244796] ==1.3.1
+
+ + sqlalchemy==2.0.43
+
+ + streamlit==1.48.1
+
+ [2025-08-20 11:08:01.245392] + tenacity==9.1.2
+
+ + tesseract==0.1.3
+
+ + threadpoolctl==3.6.0[2025-08-20 11:08:01.245637] 
+
+ + tiktoken==0.11.0
+
+ + toml==0.10.2
+
+ + tornado==6.5.2
+
+ + tqdm==4.67.1
+
+ + typing-extensions==4.14.1
+
+ + typing-inspect==0.9.0
+
+ + typing-inspection==0.4.1
+
+ + tzdata==2025.2
+
+ + urllib3==2.5.0
+
+ + watchdog==6.0.0
+
+ + yarl==1.20.1
+
+ + zstandard==0.24.0
+
+[11:08:01] 🐍 Python dependencies were installed from /mount/src/docuagent/uv.lock using uv-sync.
+
+[11:08:01] 📦 WARN: More than one requirements file detected in the repository. Available options: uv-sync /mount/src/docuagent/uv.lock, poetry /mount/src/docuagent/pyproject.toml. Used: uv-sync with /mount/src/docuagent/uv.lock
+
+Check if streamlit is installed
+
+Streamlit is already installed
+
+[11:08:03] 📦 Processed dependencies!
+
+
+
+
+[11:08:09] ❗️ The service has encountered an error while checking the health of the Streamlit app: Get "http://localhost:8501/healthz": dial tcp 127.0.0.1:8501: connect: connection refused
