@@ -85,7 +85,9 @@ Return a JSON object with this exact structure:
   {{"name": "field_name", "value": "extracted_value", "confidence": 0.85, "source": {{"page": 1, "bbox": [100, 200, 300, 220]}}}}
 ]}}
 
-Be extremely careful with numerical values, dates, and proper names. If unsure, lower the confidence score rather than guessing."""
+Be extremely careful with numerical values, dates, and proper names. If unsure, lower the confidence score rather than guessing.
+
+"""
 
         user_prompt = """Extract structured data from this {doc_type} document:
 

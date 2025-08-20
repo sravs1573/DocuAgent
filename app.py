@@ -124,7 +124,7 @@ def main():
             
             # Display file preview
             if uploaded_file.type.startswith('image/'):
-                st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+                st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
             
             # Process button
             if st.button("🚀 Process Document", disabled=st.session_state.processing):
