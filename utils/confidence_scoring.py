@@ -361,7 +361,7 @@ class ConfidenceScorer:
         
         overall_confidence = mean_confidence - variance_penalty + critical_bonus - missing_penalty + field_count_factor
         
-        return float(max(0.0, min(1.0, overall_confidence)))
+        return float(max(0.0, min(1.0, float(overall_confidence))))
     
     def get_critical_fields(self, doc_type: str) -> List[str]:
         """Get list of critical fields for each document type"""

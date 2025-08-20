@@ -23,7 +23,7 @@ class DocumentProcessor:
         self.llm = ChatOpenAI(
             temperature=0,
             model="gpt-4o",  # the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
-            api_key=api_key
+            openai_api_key=api_key
         )
     
     def detect_document_type(self, text_content: str) -> str:
@@ -48,7 +48,12 @@ class DocumentProcessor:
             chain = prompt | self.llm
             response = chain.invoke({"text": text_content[:2000]})  # Limit text length
             
-            doc_type = response.content.strip().lower()
+            # Handle different response types
+            content = response.content if hasattr(response, 'content') else str(response)
+            if hasattr(content, 'strip'):
+                doc_type = content.strip().lower()
+            else:
+                doc_type = str(content).strip().lower()
             if doc_type in ['invoice', 'medical_bill', 'prescription']:
                 return doc_type
             else:

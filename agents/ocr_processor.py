@@ -22,14 +22,25 @@ class OCRProcessor:
             
             for page_num in range(pdf_document.page_count):
                 page = pdf_document[page_num]
-                text_content += page.get_text()
+                # Extract text - compatible with different PyMuPDF versions
+                page_text = ""
+                try:
+                    page_text = page.get_text()
+                except AttributeError:
+                    # Fallback for older versions
+                    page_text = page.getText() if hasattr(page, 'getText') else ""
+                
+                text_content += page_text
                 
                 # If no text found, try OCR on the page
-                if not page.get_text().strip():
-                    pix = page.get_pixmap()
-                    img_data = pix.tobytes("png")
-                    ocr_text = self.extract_text_from_image(img_data)
-                    text_content += f"\n[OCR Page {page_num + 1}]\n{ocr_text}\n"
+                if not page_text.strip():
+                    try:
+                        pix = page.get_pixmap() if hasattr(page, 'get_pixmap') else page.getPixmap()
+                        img_data = pix.tobytes("png") if hasattr(pix, 'tobytes') else pix.getImageData("png")
+                        ocr_text = self.extract_text_from_image(img_data)
+                        text_content += f"\n[OCR Page {page_num + 1}]\n{ocr_text}\n"
+                    except Exception as ocr_error:
+                        print(f"OCR failed for page {page_num + 1}: {ocr_error}")
             
             pdf_document.close()
             return text_content

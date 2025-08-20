@@ -18,7 +18,7 @@ class ExtractionAgent:
         self.llm = ChatOpenAI(
             temperature=0,
             model=model,  # the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
-            api_key=api_key
+            openai_api_key=api_key
         )
         
         # Schema mapping
@@ -136,7 +136,7 @@ Remember to:
                 })
                 
                 # Parse JSON response
-                content = response.content
+                content = response.content if hasattr(response, 'content') else str(response)
                 if hasattr(content, 'strip'):
                     content = content.strip()
                 else:
