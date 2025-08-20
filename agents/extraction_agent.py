@@ -25,8 +25,8 @@ class ExtractionAgent:
             raise ValueError("At least one OPENAI_API_KEY environment variable is required")
         
         self.llm = ChatOpenAI(
-            temperature=0,
             model=model,  # the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
+            temperature=0,
             api_key=api_key
         )
         self.current_api_key = api_key
@@ -142,10 +142,7 @@ Remember to:
                 
                 # Parse JSON response
                 content = response.content if hasattr(response, 'content') else str(response)
-                if hasattr(content, 'strip'):
-                    content = content.strip()
-                else:
-                    content = str(content).strip()
+                content = str(content).strip()
                 
                 # Clean up potential markdown formatting
                 if content.startswith('```json'):
