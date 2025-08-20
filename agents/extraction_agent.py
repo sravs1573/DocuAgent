@@ -64,7 +64,7 @@ EXTRACTION REQUIREMENTS:
    - name: field name
    - value: extracted value (null if not found)
    - confidence: confidence score (0.0-1.0) based on text clarity and context
-   - source: {{page: page_number, bbox: [x1,y1,x2,y2]}} (estimate coordinates if needed)
+   - source: {{"page": page_number, "bbox": [x1,y1,x2,y2]}} (estimate coordinates if needed)
 
 3. CONFIDENCE SCORING GUIDELINES:
    - 0.9-1.0: Clear, unambiguous text with strong context
@@ -81,16 +81,9 @@ EXTRACTION REQUIREMENTS:
 
 5. OUTPUT FORMAT:
 Return a JSON object with this exact structure:
-{{
-  "fields": [
-    {{
-      "name": "field_name",
-      "value": "extracted_value",
-      "confidence": 0.85,
-      "source": {{"page": 1, "bbox": [100, 200, 300, 220]}}
-    }}
-  ]
-}}
+{{"fields": [
+  {{"name": "field_name", "value": "extracted_value", "confidence": 0.85, "source": {{"page": 1, "bbox": [100, 200, 300, 220]}}}}
+]}}
 
 Be extremely careful with numerical values, dates, and proper names. If unsure, lower the confidence score rather than guessing."""
 
