@@ -1,0 +1,68 @@
+Goal:
+Build an agent that:
+1.	ingests a document (PDF/image),
+2.	understands type/layout,
+3.	extracts a key-value JSON,
+4.	assigns a confidence score per field (+ overall),
+5.	evaluates accuracy
+Requirements (what to build)
+1.	Agent loop (LangChain or similar)
+
+○	Routing: detect doc type (invoice / bill / prescription)
+
+○	OCR: for scans; handle tables and totals.
+
+○	Extraction chain: LLM with structured output (Pydantic/JSONSchema) + post-processing.
+
+○	Validation: regex/date/amount checks, cross-field rules (e.g., sum(line_items)=total).
+
+○	Confidence scoring per field
+
+2.	Sample output:
+{
+  "doc_type": "invoice|medical_bill|prescription",
+  "fields": [
+    {"name":"PatientName","value":"Priya Sharma","confidence":0.91,"source":{"page":1,"bbox":[x1,y1,x2,y2]}}
+  ],
+  "overall_confidence": 0.88,
+  "qa": {"passed_rules":["totals_match"],"failed_rules":[],"notes":"2 low-confidence fields"}
+}
+Recommended interface (streamlit)
+1.	Upload: PDF or image files
+2.	Optional field list: Text box to specify fields to extract (not mandatory to fill)
+3.	Auto-detect document type
+4.	Output: JSON (copy/download), per-field confidence bars, and an overall score
+5.	UI flexibility: Encourage experimentation and innovative UI ideas
+6.	LLM: Prefer OpenAI models for extraction
+Scoring (100)
+●	Extraction accuracy & UI (40) – Consistency across multiple runs, prompt quality, handling complex layouts etc
+●	Confidence score (20) – Reliability & formula explanation 
+●	Prompting & agent design (20) – routing, tool use, retries/guardrails etc
+●	Performance & robustness (10) – timeouts, retries, idempotence etc
+●	Dataset & repo quality (10) – Picking quality & complex datasets, ReadMe, Repo quality etc
+Deliverables
+●	Please deploy the Streamlit application and share a public access link.
+●	Regularly commit and push the code to a GitHub repository, and share the repository link.
+●	Optionally, provide a brief write-up on the solution approach.
+●	Optionally, provide a brief write-up on the confidence score approach.
+Dos:
+●	Search for and use a quality dataset.
+●	Use OpenAI models as the LLM (recommended).
+●	You’re open to use any agentic tool - Open for innovation.
+●	Build the solution as a Python project with clear structure.
+●	Write clean, well-commented code so it’s easy to follow.
+●	Maintain a readable project structure (folders for data, code, outputs).
+●	Use Git for version control and commit regularly.
+●	Document your setup and usage steps in a README.md.
+
+Don’ts:
+●	Don’t work in Google Colab or any kind of notebook environment.
+●	Don’t just write ad-hoc “vibe code” — this task expects a deeper understanding of the implementation.
+●	Don’t hardcode API keys or secrets in the code.
+Nice-to-have (bonus points)
+●	Confidence scoring mechanism – Well researched confidence scoring mechanism
+●	Self-consistency prompting – multiple prompt runs + majority voting
+●	Dynamic few-shot retrieval from a prompt/example library
+●	Schema-aware validation & auto-correction (e.g., regex/date/amount checks).
+●	Well-thought project structure & clean code organization – clear folder layout, modular functions, and readable code with comments.
+●	Brief write-up on the solutio
