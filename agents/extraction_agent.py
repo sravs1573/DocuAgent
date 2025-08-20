@@ -26,9 +26,9 @@ class ExtractionAgent:
         
         self.llm = ChatOpenAI(
             model=model,  # the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
-            temperature=0,
-            api_key=api_key
+            temperature=0
         )
+        # API key is automatically picked up from environment variables
         self.current_api_key = api_key
         
         # Schema mapping
